@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Actions</key>
+	<array>
+		<dict>
+			<key>Image File</key>
+			<string>openurls.png</string>
+			<key>Script Interpreter</key>
+			<string>/usr/bin/ruby</string>
+			<key>Shell Script File</key>
+			<string>openurls.rb</string>
+			<key>Title</key>
+			<string>OpenURLS</string>
+			<key>Regular Expression</key>
+			<string>(?s)(.*?\w+?:[^\n ]+[^\.,!&gt;\)\n ].*?)+</string>
+		</dict>
+	</array>
+	<key>Extension Description</key>
+	<string>Open all urls in selection.</string>
+	<key>Extension Identifier</key>
+	<string>com.brettterpstra.popclip.extension.openurls</string>
+	<key>Extension Name</key>
+	<string>OpenURLS</string>
+	<key>Version</key>
+	<integer>2</integer>
+</dict>
+</plist>
