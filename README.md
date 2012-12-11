@@ -12,3 +12,7 @@ For the time being, I'm just including these as source, not `.popclipextz` packa
 This extension converts selected HTML text to Markdown using html2text by Aaron Swartz. Reference-style links are used and the references are placed after the text. Wrapping is disabled.
 
 The extension shows up in PopClip as "2MD".
+
+### OpenURLS
+
+This extension searches selected text for urls (http or custom handlers) and opens all urls in their default applications.
