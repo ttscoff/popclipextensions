@@ -1,7 +1,7 @@
 Brett's PopClip Extensions
 =================
 
-My (hopefully) growing collection of [PopClip](http://pilotmoon.com/popclip/) extensions.
+My (hopefully) growing collection of [PopClip][1] extensions.
 
 ### Installation
 
@@ -16,3 +16,9 @@ The extension shows up in PopClip as "2MD".
 ### OpenURLS
 
 This extension searches selected text for urls (http or custom handlers) and opens all urls in their default applications.
+
+The default OpenInChrome extension is Chrome-specific and only works with a single URL. This extension allows as many urls as you can select and will open whatever browser your system has assigned to the handler. This includes nvalt:// and txmt:// links, as well as http:// links. If you use something like [Choosy][2] it will open them through that.
+
+
+[1]: http://pilotmoon.com/popclip/
+[2]: http://www.choosyosx.com/
