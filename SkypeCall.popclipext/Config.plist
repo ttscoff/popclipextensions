@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Actions</key>
+	<array>
+		<dict>
+			<key>Image File</key>
+			<string>skypecall.png</string>
+			<key>Script Interpreter</key>
+			<string>/usr/bin/ruby</string>
+			<key>Shell Script File</key>
+			<string>skypecall.rb</string>
+			<key>Title</key>
+			<string>SkypeCall</string>
+			<key>Regular Expression</key>
+			<string>(?:(?:\+?1\s*(?:[.-]\s*)?)?(?:\(\s*([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9])\s*\)|([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9]))\s*(?:[.-]\s*)?)?([2-9]1[02-9]|[2-9][02-9]1|[2-9][02-9]{2})\s*(?:[.-]\s*)?([0-9]{4})(?:\s*(?:#|x\.?|ext\.?|extension)\s*(\d+))?</string>
+		</dict>
+	</array>
+	<key>Extension Description</key>
+	<string>Call the first phone number in selection with Skype.</string>
+	<key>Extension Identifier</key>
+	<string>com.brettterpstra.popclip.extension.skypecall</string>
+	<key>Extension Name</key>
+	<string>SkypeCall</string>
+	<key>Version</key>
+	<integer>2</integer>
+</dict>
+</plist>

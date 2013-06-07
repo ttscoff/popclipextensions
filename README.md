@@ -1,7 +1,7 @@
 Brett's PopClip Extensions
 =================
 
-My (hopefully) growing collection of [PopClip][1] extensions.
+My (hopefully) growing collection of [PopClip][popclip] extensions.
 
 ### Installation
 
@@ -17,7 +17,7 @@ The extension shows up in PopClip as "2MD".
 
 This extension searches selected text for urls (http or custom handlers) and opens all urls in their default applications.
 
-The default OpenInChrome extension is Chrome-specific and only works with a single URL. This extension allows as many urls as you can select and will open whatever browser your system has assigned to the handler. This includes nvalt:// and txmt:// links, as well as http:// links. If you use something like [Choosy][2] it will open them through that.
+The default OpenInChrome extension is Chrome-specific and only works with a single URL. This extension allows as many urls as you can select and will open whatever browser your system has assigned to the handler. This includes nvalt:// and txmt:// links, as well as http:// links. If you use something like [Choosy][choosy] it will open them through that.
 
 ### Blockquote
 
@@ -50,5 +50,12 @@ When creating an inline code block, it will also detect whitespace at the beginn
 
 Fully outdents the selection, maintaining nested indentation.
 
-[1]: http://pilotmoon.com/popclip/
-[2]: http://www.choosyosx.com/
+### SkypeCall
+
+Detect phone numbers in the selection and call the first one using Skype.
+
+The GitHub repository for all of my extensions is [here][github].
+
+[popclip]: http://pilotmoon.com/popclip/
+[choosy]: http://www.choosyosx.com/
+[github]: https://github.com/ttscoff/popclipextensions
