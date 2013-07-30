@@ -50,6 +50,15 @@ When creating an inline code block, it will also detect whitespace at the beginn
 
 Fully outdents the selection, maintaining nested indentation.
 
+### Comment
+
+Adds comment tags around or before text:
+
+* **Default**: HTML Comment
+* Hold **Option**: CSS Comment (`/* block of text */`)
+* Hold **Command**: Hash Comment (`# before each line`)
+* Hold **Command-Option**: Slash comment (`// before each line`)
+
 ### SkypeCall
 
 Detect phone numbers in the selection and call the first one using Skype.
