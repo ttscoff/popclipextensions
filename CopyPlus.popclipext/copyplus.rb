@@ -1,10 +1,8 @@
 #!/usr/bin/ruby
-def e_sh(str)
-  str.to_s.gsub(/(?=[^a-zA-Z0-9_.\/\-\x7F-\xFF\n])/, '\\').gsub(/\n/, "'\n'").sub(/^$/, "''")
-end
+require 'shellwords'
 
 input = ENV['POPCLIP_TEXT']
 
-pboard = %x{pbpaste}.strip
+pboard = %x{pbpaste}
 
-%x{echo #{e_sh(pboard + "\n" + input)}|__CF_USER_TEXT_ENCODING=0x1F5:0x8000100:0x8000100 pbcopy}
+%x{echo #{Shellwords.shellescape(pboard + "\n" + input)}|__CF_USER_TEXT_ENCODING=0x1F5:0x8000100:0x8000100 pbcopy}
