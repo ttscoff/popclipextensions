@@ -68,3 +68,7 @@ The GitHub repository for all of my extensions is [here][github].
 [popclip]: http://pilotmoon.com/popclip/
 [choosy]: http://www.choosyosx.com/
 [github]: https://github.com/ttscoff/popclipextensions
+
+### CopyPLUS
+
+PopClip extension to append the selection to the current contents in the clipboard.
