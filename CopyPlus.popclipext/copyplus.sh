@@ -1,7 +1,7 @@
 #!/bin/bash
 
-input=$(cat)
-cat <<EOF
-$(pbpaste)
-$input
-EOF | pbcopy
+clipboard=`__CF_USER_TEXT_ENCODING=$UID:0x8000100:0x8000100 pbpaste`
+__CF_USER_TEXT_ENCODING=$UID:0x8000100:0x8000100 pbcopy <<EOF
+$clipboard
+$POPCLIP_TEXT
+EOF
