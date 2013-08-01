@@ -8,9 +8,9 @@
 			<key>Image File</key>
 			<string>copyplus.png</string>
 			<key>Script Interpreter</key>
-			<string>/usr/bin/ruby</string>
+			<string>/bin/bash</string>
 			<key>Shell Script File</key>
-			<string>copyplus.rb</string>
+			<string>copyplus.sh</string>
 			<key>Title</key>
 			<string>CopyPLUS</string>
 		</dict>
