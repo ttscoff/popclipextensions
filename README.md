@@ -63,12 +63,16 @@ Adds comment tags around or before text:
 
 Detect phone numbers in the selection and call the first one using Skype.
 
+### CopyPLUS
+
+PopClip extension to append the selection to the current contents in the clipboard. *This is a duplicate of an existing extension (Append) with just slightly better UTF-8 handling.*
+
+### Markdown to Mindmap
+
+Takes a selection of plain text containing markdown headlines, list items and paragraphs and converts it into a format ready for pasting into a mind mapping application (such as MindNode, MindManager or MindMeister) as separate nodes/topics.
+
 The GitHub repository for all of my extensions is [here][github].
 
 [popclip]: http://pilotmoon.com/popclip/
 [choosy]: http://www.choosyosx.com/
 [github]: https://github.com/ttscoff/popclipextensions
-
-### CopyPLUS
-
-PopClip extension to append the selection to the current contents in the clipboard.
