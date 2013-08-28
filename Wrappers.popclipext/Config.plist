@@ -71,22 +71,6 @@
 			<key>Option Label</key>
 			<string>⌘ Suffix</string>
 		</dict>
-		<dict>
-			<key>Option Identifier</key>
-			<string>popmakershiftprefix</string>
-			<key>Option Type</key>
-			<string>string</string>
-			<key>Option Label</key>
-			<string>⇧ Prefix</string>
-		</dict>
-		<dict>
-			<key>Option Identifier</key>
-			<string>popmakershiftsuffix</string>
-			<key>Option Type</key>
-			<string>string</string>
-			<key>Option Label</key>
-			<string>⇧ Suffix</string>
-		</dict>
 	</array>
 	<key>Extension Description</key>
 	<string>Too many wrappers</string>
