@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Actions</key>
+	<array>
+		<dict>
+			<key>Image File</key>
+			<string>wrapped.png</string>
+			<key>Script Interpreter</key>
+			<string>/usr/bin/ruby</string>
+			<key>Shell Script File</key>
+			<string>script.rb</string>
+			<key>Title</key>
+			<string>wrap</string>
+			<key>After</key>
+			<string>paste-result</string>
+			<key>Requirements</key>
+			<array>
+				<string>paste</string>
+			</array>
+		</dict>
+	</array>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Option Identifier</key>
+			<string>popmakerprefix</string>
+			<key>Option Type</key>
+			<string>string</string>
+			<key>Option Label</key>
+			<string>Prefix</string>
+		</dict>
+		<dict>
+			<key>Option Identifier</key>
+			<string>popmakersuffix</string>
+			<key>Option Type</key>
+			<string>string</string>
+			<key>Option Label</key>
+			<string>Suffix</string>
+		</dict>
+		<dict>
+			<key>Option Identifier</key>
+			<string>popmakeroptprefix</string>
+			<key>Option Type</key>
+			<string>string</string>
+			<key>Option Label</key>
+			<string>⌥ Prefix</string>
+		</dict>
+		<dict>
+			<key>Option Identifier</key>
+			<string>popmakeroptsuffix</string>
+			<key>Option Type</key>
+			<string>string</string>
+			<key>Option Label</key>
+			<string>⌥ Suffix</string>
+		</dict>
+		<dict>
+			<key>Option Identifier</key>
+			<string>popmakercmdprefix</string>
+			<key>Option Type</key>
+			<string>string</string>
+			<key>Option Label</key>
+			<string>⌘ Prefix</string>
+		</dict>
+		<dict>
+			<key>Option Identifier</key>
+			<string>popmakercmdsuffix</string>
+			<key>Option Type</key>
+			<string>string</string>
+			<key>Option Label</key>
+			<string>⌘ Suffix</string>
+		</dict>
+		<dict>
+			<key>Option Identifier</key>
+			<string>popmakershiftprefix</string>
+			<key>Option Type</key>
+			<string>string</string>
+			<key>Option Label</key>
+			<string>⇧ Prefix</string>
+		</dict>
+		<dict>
+			<key>Option Identifier</key>
+			<string>popmakershiftsuffix</string>
+			<key>Option Type</key>
+			<string>string</string>
+			<key>Option Label</key>
+			<string>⇧ Suffix</string>
+		</dict>
+	</array>
+	<key>Extension Description</key>
+	<string>Too many wrappers</string>
+	<key>Extension Identifier</key>
+	<string>com.brettterpstra.popclip.extension.wrapper</string>
+	<key>Extension Name</key>
+	<string>Wrappers</string>
+	<key>Version</key>
+	<integer>2</integer>
+</dict>
+</plist>
