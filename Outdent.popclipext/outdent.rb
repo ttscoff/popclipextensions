@@ -8,10 +8,15 @@ input = ENV['POPCLIP_TEXT']
 # and some blank lines
 # ENDINPUT
 
-shortest = false
-input.scan(/^\s*/m).each do |leader|
-    if shortest == false || leader.length < shortest.length
-        shortest = leader
-    end
+case ENV['POPCLIP_MODIFIER_FLAGS'].to_i
+when 1048576 # Command
+	input.each {|line| print line =~ /^\s*$/ ? "\n" : line.lstrip }
+else
+	shortest = false
+	input.scan(/^\s*/m).each do |leader|
+	    if shortest == false || leader.length < shortest.length
+	        shortest = leader
+	    end
+	end
+	print input.gsub(/^#{shortest}/m,'')
 end
-print input.gsub(/^#{shortest}/m,'')
