@@ -17,6 +17,13 @@
 			<string>(?:(?:\+?1\s*(?:[.-]\s*)?)?(?:\(\s*([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9])\s*\)|([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9]))\s*(?:[.-]\s*)?)?([2-9]1[02-9]|[2-9][02-9]1|[2-9][02-9]{2})\s*(?:[.-]\s*)?([0-9]{4})(?:\s*(?:#|x\.?|ext\.?|extension)\s*(\d+))?</string>
 		</dict>
 	</array>
+	<key>Credits</key>
+	<array>
+		<key>Name</key>
+		<string>Brett Terpstra</string>
+		<key>Link</key>
+		<string>http://brettterpstra.com</string>
+	</array>
 	<key>Extension Description</key>
 	<string>Call the first phone number in selection with Skype.</string>
 	<key>Extension Identifier</key>

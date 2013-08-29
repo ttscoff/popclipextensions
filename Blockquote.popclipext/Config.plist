@@ -21,6 +21,13 @@
 			</array>
 		</dict>
 	</array>
+	<key>Credits</key>
+	<array>
+		<key>Name</key>
+		<string>Brett Terpstra</string>
+		<key>Link</key>
+		<string>http://brettterpstra.com</string>
+	</array>
 	<key>Extension Description</key>
 	<string>Turn indented text into nested Markdown blockquote.</string>
 	<key>Extension Identifier</key>

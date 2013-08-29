@@ -72,6 +72,13 @@
 			<string>⌘ Suffix</string>
 		</dict>
 	</array>
+	<key>Credits</key>
+	<array>
+		<key>Name</key>
+		<string>Brett Terpstra</string>
+		<key>Link</key>
+		<string>http://brettterpstra.com</string>
+	</array>
 	<key>Extension Description</key>
 	<string>Too many wrappers</string>
 	<key>Extension Identifier</key>

@@ -25,5 +25,12 @@
 			</array>
 		</dict>
 	</array>
+	<key>Credits</key>
+	<array>
+		<key>Name</key>
+		<string>Brett Terpstra</string>
+		<key>Link</key>
+		<string>http://brettterpstra.com</string>
+	</array>
 </dict>
 </plist>
