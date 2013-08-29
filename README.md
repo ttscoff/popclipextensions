@@ -79,6 +79,10 @@ Think of it as a custom version of the comments plugin.
 
 When installing the extension, the options will appear. They can be accessed again by going into edit mode in the plugins dropdown and clicking the gear icon next to "Wrappers."
 
+### URLEncode
+
+Just URL encodes (percent encoding) the selected text using Perl.
+
 The GitHub repository for all of my extensions is [here][github].
 
 [popclip]: http://pilotmoon.com/popclip/
