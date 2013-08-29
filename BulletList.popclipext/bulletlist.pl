@@ -26,14 +26,17 @@ my $line;
 my $marker;
 my $item;
 my $leading_space;
+my $prefix = $ENV{"POPCLIP_OPTION_BULLETPREFIX"};
 
 my @resultLines = split /\n/, $ENV{"POPCLIP_TEXT"};
 foreach my $line (@resultLines) {
 	next if $line =~ /^[\s\t]*$/;
-	if ( $ENV{"POPCLIP_MODIFIER_FLAGS"} == 524288 ) {
+	if ( $ENV{"POPCLIP_MODIFIER_FLAGS"} == 524288 ) { # Option, use numbered list
 		$line =~ s/^([ \t]*)(\d+\. |[\*\+\-] )?/${1}1. /;
+	} elsif ( $ENV{"POPCLIP_MODIFIER_FLAGS"} == 1572864 ) { # Command-option, clear list
+		$line =~ s/^([ \t]*)(\d+\. |[\*\+\-] )?\s*(.*)/${1}${3}\n\n/;
 	} else {
-		$line =~ s/^([ \t]*)(\d+\. |[\*\+\-] )?/${1}* /;
+		$line =~ s/^([ \t]*)(\d+\. |[\*\+\-] )?/${1}$prefix /; # None, use bullet list
 	}
 	$line =~ /^([ \t]*)([\*\+\-]|\d+\.)(\.?\s*)(.*)/;
 	$leading_space = $1;

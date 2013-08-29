@@ -21,6 +21,25 @@
 			</array>
 		</dict>
 	</array>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Option Identifier</key>
+			<string>bulletprefix</string>
+			<key>Option Type</key>
+			<string>multiple</string>
+			<key>Option Default Value</key>
+			<string>*</string>
+			<key>Option Label</key>
+			<string>Bullet Prefix</string>
+			<key>Option Values</key>
+			<array>
+				<string>*</string>
+				<string>+</string>
+				<string>-</string>
+			</array>
+		</dict>
+	</array>
 	<key>Credits</key>
 	<array>
 		<key>Name</key>
