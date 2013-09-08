@@ -3,6 +3,8 @@ Brett's PopClip Extensions
 
 My (hopefully) growing collection of [PopClip][popclip] extensions.
 
+\\[ \log(\frac{1}{P(w|w_{-2}w_{-1})}) \\]
+
 ## Installation
 
 For the time being, I'm just including these as source, not `.popclipextz` packages. To install, just make sure the extension of a folder is `.popclipext` and double click it in Finder. An up-to-date package of bundled versions is [available on my site](http://brettterpstra.com/2013/03/12/more-markdown-for-popclip/).
@@ -107,6 +109,25 @@ Just URL encodes (percent encoding) the selected text using Perl.
 
 *Also available at [Pilot Moon](http://pilotmoon.com/popclip/extensions/page/URLEncode), same extension.*
 
+### Editor
+
+- No modifier: `<mark>` (highlight)
+- **Control**: `<ins datetime></ins>` (insertion)
+- **Command**: `<del datetime></del>` (deletion)
+- **Option**: `<!-- -->` (comment)
+
+### CriticMarkup
+
+Allows the quick insertion of [CriticMarkup][] syntax. Optionally fill in a signature to have a comment included after every insert, deletion or change with your initials or name.
+
+- No modifier: Highlight
+- **Command**: Deletion
+- **Control**: Insertion
+- **Control-Option**: Change
+- **Option**: Comment
+
+[CriticMarkup]: http://criticmarkup.com/spec.php
+
 ## Download
 
 The GitHub repository for all of my extensions is [here][github].
@@ -114,3 +135,4 @@ The GitHub repository for all of my extensions is [here][github].
 [popclip]: http://pilotmoon.com/popclip/
 [choosy]: http://www.choosyosx.com/
 [github]: https://github.com/ttscoff/popclipextensions
+
