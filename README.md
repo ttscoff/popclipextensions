@@ -3,8 +3,6 @@ Brett's PopClip Extensions
 
 My (hopefully) growing collection of [PopClip][popclip] extensions.
 
-\\[ \log(\frac{1}{P(w|w_{-2}w_{-1})}) \\]
-
 ## Installation
 
 For the time being, I'm just including these as source, not `.popclipextz` packages. To install, just make sure the extension of a folder is `.popclipext` and double click it in Finder. An up-to-date package of bundled versions is [available on my site](http://brettterpstra.com/2013/03/12/more-markdown-for-popclip/).
