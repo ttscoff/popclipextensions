@@ -1,7 +1,7 @@
 Brett's PopClip Extensions
 =================
 
-My (hopefully) growing collection of [PopClip][popclip] extensions.
+My (hopefully) growing collection of [PopClip][popclip] extensions. 
 
 ## Installation
 
@@ -62,6 +62,12 @@ PopClip extension to append the selection to the current contents in the clipboa
 * Hold Command (⌘) when clicking to add an extra line break between entries.
 * Hold Option (⌥) to append with no extra whitespace.
 
+### FixPoorlyObscuredEmails
+
+Fixes emails obscured in a "support AT mydomain DOT com" fashion.
+
+Hold Option to also open a new email compose window for each matched address. This feature does not require edit capability in the current field.
+
 ### Markdown to Mindmap
 
 Takes a selection of plain text containing markdown headlines, list items and paragraphs and converts it into a format ready for pasting into a mind mapping application (such as MindNode, MindManager or MindMeister) as separate nodes/topics.
@@ -83,6 +89,10 @@ This is only here if you want a separate button for numbered lists. Otherwise yo
 This extension searches selected text for urls (http or custom handlers) and opens all urls in their default applications.
 
 The default OpenInChrome extension is Chrome-specific and only works with a single URL. This extension allows as many urls as you can select and will open whatever browser your system has assigned to the handler. This includes nvalt:// and txmt:// links, as well as http:// links. If you use something like [Choosy][choosy] it will open them through that.
+
+### CopyURLS
+
+Duplicate of OpenURLS, but copies urls to the clipboard, one link per line, instead of opening in browser.
 
 ### Outdent
 

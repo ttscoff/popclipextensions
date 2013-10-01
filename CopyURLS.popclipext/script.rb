@@ -1,9 +1,10 @@
 #!/usr/bin/ruby
 debug = ARGV[0] =~ /(debug|-?d)/ ? true : false
 
-# 1.1
+# 1.0
 # 2013-09-30
 #
+# Duplicate of OpenURLs, but copies a plain, newline-separated list to the clipboard
 # Better regex for extracting urls
 # Hold down Option to combine lines and fix broken urls
 # 	This can cause issues with full urls on consecutive lines, but is handy for a single broken link.
@@ -13,6 +14,8 @@ unless debug
   input = ENV['POPCLIP_TEXT']
 else
   input =<<ENDINPUT
+Sponsored by [TextExpander](http://smilesoftware.com/systematic?crcat=systematic&crsource=te&crcampaign=oct01) (coupon code **SYSTEMATIC**), [SquareSpace](http://squarespace.com) (coupon code **CANDYCORN**), and [MailChimp](http://mailchimp.com/5by5).
+
 http://snipplr.com/view/2371/regex-regular
 -expression-to-match-a-url/
 
@@ -51,7 +54,7 @@ o = ""
 urls = input.scan(/((?:(?:http|https):\/\/)?[\w\-_]+(\.[\w\-_]+)+([\w\-\.,@?^=%&amp;:\/~\+#\(\)_]*[\w\-\@^=%&amp;\/~\+#\(\)])?)/mi)
 
 urls.each {|url|
-  if url.length == 3
+  if url.length == 3 && url.join("") !~ /^[\d\.]+$/
 
   	url = url[0]
 
@@ -60,12 +63,7 @@ urls.each {|url|
   	end
 
     target = url =~ /^http/ ? url : "http://#{url}"
-
-    unless debug
-      %x{open '#{target}'}
-    else
-      o += target + "\n"
-    end
+    o += target + "\n"
   end
 }
-print o if debug
+print o

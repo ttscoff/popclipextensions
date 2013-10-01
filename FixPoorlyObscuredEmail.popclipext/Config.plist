@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Version</key>
+	<integer>2</integer>
+	<key>Extension Description</key>
+	<string>Fix or open AT DOT obscured email addresses.</string>
+	<key>Extension Name</key>
+	<string>FixPoorlyObscuredEmail</string>
+	<key>Extension Identifier</key>
+	<string>com.brettterpstra.popclip.extension.fixemail</string>
+	<key>Actions</key>
+	<array>
+		<dict>
+			<key>Shell Script File</key>
+			<string>script.rb</string>
+			<key>Script Interpreter</key>
+			<string>/usr/bin/ruby</string>
+			<key>Title</key>
+			<string>DOT</string>
+			<key>After</key>
+			<string>paste-result</string>
+			<key>Regular Expression</key>
+			<string>(?si)(.*)AT\s+[a-z0-9]+\s+DOT(.*)</string>
+		</dict>
+	</array>
+	<key>Credits</key>
+	<array>
+		<key>Name</key>
+		<string>Brett Terpstra</string>
+		<key>Link</key>
+		<string>http://brettterpstra.com</string>
+	</array>
+</dict>
+</plist>
