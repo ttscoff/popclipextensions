@@ -136,6 +136,10 @@ Allows the quick insertion of [CriticMarkup][] syntax. Optionally fill in a sign
 
 [CriticMarkup]: http://criticmarkup.com/spec.php
 
+### WebMarkdown
+
+Also known as WebMD, this extension shows up when you select text on a web page. Clicking it will convert the selected headlines, text and links (including image links) to Markdown in your clipboard.
+
 ## Download
 
 The GitHub repository for all of my extensions is [here][github].
