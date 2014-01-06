@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Actions</key>
+	<array>
+		<dict>
+			<key>Image File</key>
+			<string>icon.png</string>
+			<key>Script Interpreter</key>
+			<string>/usr/bin/ruby</string>
+			<key>Shell Script File</key>
+			<string>script.rb</string>
+			<key>Title</key>
+			<string>Twitterify</string>
+			<key>Regular Expression</key>
+			<string>(?si)(.*)?(?:\s|^)[@#]\w+(.*)?</string>
+			<key>After</key>
+			<string>paste-result</string>
+			<key>Requirements</key>
+			<array>
+				<string>paste</string>
+			</array>
+		</dict>
+	</array>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Option Identifier</key>
+			<string>usemarkdown</string>
+			<key>Option Type</key>
+			<string>boolean</string>
+			<key>Option Label</key>
+			<string>Markdown Links</string>
+			<key>Option Default Value</key>
+			<string>1</string>
+		</dict>
+	</array>
+	<key>Credits</key>
+	<array>
+		<key>Name</key>
+		<string>Brett Terpstra</string>
+		<key>Link</key>
+		<string>http://brettterpstra.com</string>
+	</array>
+	<key>Extension Description</key>
+	<string>Converts @names and #hashtags to Twitter urls.</string>
+	<key>Extension Identifier</key>
+	<string>com.brettterpstra.popclip.extension.twitterify</string>
+	<key>Extension Name</key>
+	<string>Twitterify</string>
+	<key>Version</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -140,6 +140,11 @@ Allows the quick insertion of [CriticMarkup][] syntax. Optionally fill in a sign
 
 Also known as WebMD, this extension shows up when you select text on a web page. Clicking it will convert the selected headlines, text and links (including image links) to Markdown in your clipboard.
 
+### Twitterify
+
+Convert all @names and #tags to Markdown or HTML links. You can set the default link type in the extension's options, and manually switch to the other type by holding down Option when running it.
+
+
 ## Download
 
 The GitHub repository for all of my extensions is [here][github].
