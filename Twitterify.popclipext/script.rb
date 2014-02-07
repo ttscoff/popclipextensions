@@ -34,7 +34,7 @@ begin
     if match[0] == "@"
       markdown ? "#{$1}[#{match}](https://twitter.com/#{match[1..-1]})" : "#{$1}<a href=\"https://twitter.com/#{match[1..-1]}\" title=\"#{match[1..-1]} on Twitter\">#{match}</a>"
     elsif match[0] == "#"
-      markdown ? "#{$1}[#{match}](https://twitter.com/search?q=%23#{match[1..-1]}&src=hash)" : "#{$1}<a href=\"https://twitter.com/search?q=%23#{match[1..-1]}&src=hash\">#{match}</a>"
+      markdown ? "#{$1}[\\#{match}](https://twitter.com/search?q=%23#{match[1..-1]}&src=hash)" : "#{$1}<a href=\"https://twitter.com/search?q=%23#{match[1..-1]}&src=hash\">#{match}</a>"
     else
       "#{$1}#{match}"
     end
