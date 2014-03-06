@@ -144,6 +144,21 @@ Also known as WebMD, this extension shows up when you select text on a web page.
 
 Convert all @names and #tags to Markdown or HTML links. You can set the default link type in the extension's options, and manually switch to the other type by holding down Option when running it.
 
+### LinkCleaner
+
+PopClip extension to lengthen and clean URLs.
+
+Option: clean all query strings (default: only clean Google UTM strings)
+Command: Output just the resulting URL(s)
+Command-Option: Output just URL(s) with query strings stripped
+
+### CopyCleanLinks
+
+PopClip extension to lengthen and clean URLs. Duplicate of LinkCleaner, but only copies results to the clipboard.
+
+Option: clean all query strings (default: only clean Google UTM strings)
+Command: Output just the resulting URL(s)
+Command-Option: Output just URL(s) with query strings stripped
 
 ## Download
 
