@@ -160,6 +160,12 @@ Option: clean all query strings (default: only clean Google UTM strings)
 Command: Output just the resulting URL(s)
 Command-Option: Output just URL(s) with query strings stripped
 
+### Sum
+
+Detect all numbers in selection and total them. Allows decimal places (using `.` or `,` as separator) and negative numbers. Result is copied to clipboard.
+
+Use the options "Separator" and "Decimal Delimiter" to define characters used in your locale for separating thousands and decimal places, respectively.
+
 ## Download
 
 The GitHub repository for all of my extensions is [here][github].
