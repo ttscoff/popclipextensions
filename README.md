@@ -1,7 +1,7 @@
 Brett's PopClip Extensions
 =================
 
-My (hopefully) growing collection of [PopClip][popclip] extensions. 
+My growing collection of [PopClip][popclip] extensions. 
 
 ## Installation
 
@@ -167,6 +167,10 @@ Command-Option: Output just URL(s) with query strings stripped
 Detect all numbers in selection and total them. Allows decimal places (using `.` or `,` as separator) and negative numbers. Result is copied to clipboard.
 
 Use the options "Separator" and "Decimal Delimiter" to define characters used in your locale for separating thousands and decimal places, respectively.
+
+### DefineAbbr
+
+PopClip extension to search textingabbreviations.ca for the selected string.
 
 ## Download
 
