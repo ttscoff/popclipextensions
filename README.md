@@ -7,7 +7,7 @@ _Current release version: **[1.19](https://github.com/ttscoff/popclipextensions/
 
 ## Installation
 
-For the time being, I'm just including these as source, not `.popclipextz` packages. To install, just make sure the extension of a folder is `.popclipext` and double click it in Finder. An up-to-date package of bundled versions is [available on my site](http://brettterpstra.com/2013/03/12/more-markdown-for-popclip/).
+This repository only includes these as source bundles (`.popclipext`), not packaged `.popclipextz` versions. To install, just make sure the extension of a folder is `.popclipext` and double click it in Finder. An up-to-date package of the bundled versions is [available on my site](http://brettterpstra.com/projects/bretts-popclip-extensions).
 
 <!-- EXTENSIONS -->
 
@@ -198,7 +198,7 @@ The GitHub repository for all of my extensions is [here][github].
 
 ## Changelog ##
 
-### 1.18, 1.19
+### 1.19 --- 1.20
 
 * stupid commits because I'm having trouble with the build script. Don't mind me.
 
