@@ -198,6 +198,10 @@ The GitHub repository for all of my extensions is [here][github].
 
 ## Changelog ##
 
+### 1.18, 1.19
+
+* stupid commits because I'm having trouble with the build script. Don't mind me.
+
 ### 1.18
 
 * Quick little format stripper (PoorText)
