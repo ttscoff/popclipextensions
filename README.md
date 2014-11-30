@@ -3,9 +3,13 @@ Brett's PopClip Extensions
 
 My growing collection of [PopClip][popclip] extensions. 
 
+_Current release version: **[1.17](https://github.com/ttscoff/popclipextensions/releases/tag/1.17)**_
+
 ## Installation
 
 For the time being, I'm just including these as source, not `.popclipextz` packages. To install, just make sure the extension of a folder is `.popclipext` and double click it in Finder. An up-to-date package of bundled versions is [available on my site](http://brettterpstra.com/2013/03/12/more-markdown-for-popclip/).
+
+<!-- EXTENSIONS -->
 
 ## Extensions
 
@@ -90,7 +94,9 @@ This is only here if you want a separate button for numbered lists. Otherwise yo
 
 This extension searches selected text for urls (http or custom handlers) and opens all urls in their default applications.
 
-The default OpenInChrome extension is Chrome-specific and only works with a single URL. This extension allows as many urls as you can select and will open whatever browser your system has assigned to the handler. This includes nvalt:// and txmt:// links, as well as http:// links. If you use something like [Choosy][choosy] it will open them through that.
+<del>The default OpenInChrome extension is Chrome-specific and only works with a single URL. This extension allows as many urls as you can select and will open whatever browser your system has assigned to the handler. This includes nvalt:// and txmt:// links, as well as http:// links. If you use something like [Choosy][choosy] it will open them through that.</del>
+
+<ins>Turned out to be more useful to me to just have it handle http links, detect links without protocols, and open those in my default browser.</ins>
 
 ### CopyURLS
 
@@ -106,6 +112,8 @@ Fully outdents the selection, maintaining nested indentation.
 Detect phone numbers in the selection and call the first one using Skype.
 
 ### Too Many Wrappers
+
+[Get it?](https://www.youtube.com/watch?v=HNB8pNqwrKw)
 
 Allows the definition of three custom "wrappers," prefixes and suffixes that will surround selected text. They're triggered, respectively, by clicking with the Option key, Command key or no modifier key held down. 
 
@@ -172,6 +180,12 @@ Use the options "Separator" and "Decimal Delimiter" to define characters used in
 
 PopClip extension to search textingabbreviations.ca for the selected string.
 
+### PoorText
+
+Strips rich text formatting from selection. There are probably multiple others that do this, but it's so easy I just made it myself.
+
+<!-- END EXTENSIONS -->
+
 ## Download
 
 The GitHub repository for all of my extensions is [here][github].
@@ -180,3 +194,70 @@ The GitHub repository for all of my extensions is [here][github].
 [choosy]: http://www.choosyosx.com/
 [github]: https://github.com/ttscoff/popclipextensions
 
+<!-- CHANGELOG -->
+
+## Changelog ##
+
+### 1.18
+
+* Quick little format stripper (PoorText)
+
+### 1.17
+
+* Added "DefineAbbr" extension
+
+### 1.16
+
+* Updated (rewritten) blockquote extension
+
+### 1.15
+
+* Added "Sum" extension
+
+### 1.14
+
+* Added LinkCleaner and CopyCleanLinks extensions
+
+### 1.12
+
+* Added Twitterify extension.
+
+### 1.11
+
+* Added the WebMarkdown extension.
+
+### 1.10
+
+* Updated OpenURLS
+    * Better regex for extracting URLs
+    * Hold down Option to combine lines and fix broken urls
+        * This can cause issues with full urls on consecutive lines, but is handy for a single broken link.
+        * Leaves leading space on lines, so urls broken with an indent are still screwed. Ran into too many problems trying to parse around that.
+
+* Added CopyURLs
+
+    Duplicate of OpenURLs, but copies a plain, newline-separated list to the clipboard
+
+* Added FixPoorlyObscuredEmails
+    * Fixes "me AT here DOT com" style email obfuscations
+    * Hold Option to compose new email for matched addresses
+
+### 1.8
+
+* Blockquote:
+    * Handle line breaks better
+    * Command-click to decrease quote level
+    * Command-Option-click key to remove all quoting
+    * don't quote reference link definitions
+* BulletList: Bullet type configuration options, Command modifier to remove list formatting
+* CopyPlus: Option modifier to concatenate strings with no extra whitespace
+* Credits block for all extensions
+* URLEncode extension (also available at [Pilot Moon](http://pilotmoon.com/popclip/extensions/page/URLEncode))
+
+### 1.7
+
+* Outdent: Command-click to outdent all lines fully
+* Too Many Wrappers: Removed Shift-click options as they were breaking stuff.
+* CopyPlus: Command-click to add extra linebreak between entries
+
+<!-- END CHANGELOG -->

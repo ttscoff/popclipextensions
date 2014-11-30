@@ -28,13 +28,25 @@ downloads.map! {|row|
 project_file = File.expand_path("~/Sites/dev/bt/source/_projects/bretts-popclip-extensions.md")
 project_text = IO.read(project_file)
 project_text.sub!(/^updated: [\d\-]+.*$/,"updated: #{updated_short}")
+readme_text = IO.read("README.md")
+new_version_link=%Q{_Current release version: **[$newversion](https://github.com/ttscoff/popclipextensions/releases/tag/$newverion)**_}
+readme_text.sub!(/^_Current release version:.*?$/,new_version_link)
+new_descriptions = readme_text.match(/<\!-- EXTENSIONS -->(.*?)<\!-- END EXTENSIONS -->/m)[1]
+project_text.sub!(/<\!-- EXTENSIONS -->(.*?)<\!-- END EXTENSIONS -->/m,"<\!-- EXTENSIONS -->#{new_descriptions}<\!-- END EXTENSIONS -->")
+new_changelog = readme_text.match(/<\!-- CHANGELOG -->(.*?)<\!-- END CHANGELOG -->/m)[1]
+project_text.sub!(/<\!-- CHANGELOG -->(.*?)<\!-- END CHANGELOG -->/m,"<\!-- CHANGELOG -->#{new_changelog}<\!-- END CHANGELOG -->")
+
 File.open(project_file,'w+') do |f|
 	f.puts(project_text)
 end
+File.open("README.md", 'w+') do |f|
+	puts readme_text
+done
 
 puts "OK"
 EORUBY
 );
 	[[ $res == "OK" ]] && echo $newversion > VERSION
+	git commit -am "Preparing for $newversion release"
 	git release $newversion
 fi
