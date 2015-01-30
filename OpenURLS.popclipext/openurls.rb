@@ -63,6 +63,7 @@ urls.each {|url|
 
     unless debug
       %x{open '#{target}'}
+      sleep 1
     else
       o += target + "\n"
     end
