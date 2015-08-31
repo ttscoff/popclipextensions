@@ -20,6 +20,8 @@ lines = outdent(input).split("\n")
 # Remove blank lines
 lines.delete_if {|line| line =~ /^\s*$/}
 
+# Remove lines that are not headings or lists
+lines.delete_if {|line| line =~ /^(?!(#|\s*(\d\.|[\-\*\+])\s)).+/}
 
 # Handle converting headlines and lists to indented outline
 last_level = 0
