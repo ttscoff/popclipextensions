@@ -100,6 +100,9 @@ def hn(tag):
             if n in range(1, 10): return n
         except ValueError: return 0
 
+def clean_invisibles(line):
+    return re.sub(r'[\xc2\x99\xc2\x95\xc2\xa0]'," ",line)
+
 def dumb_property_dict(style):
     """returns a hash of css attributes"""
     return dict([(x.strip(), y.strip()) for x, y in [z.split(':', 1) for z in style.split(';') if ':' in z]]);
@@ -739,7 +742,7 @@ def wrapwrite(text):
 
 def html2text(html, baseurl=''):
     h = HTML2Text(baseurl=baseurl)
-    return h.handle(html)
+    return clean_invisibles(h.handle(html))
 
 def unescape(s, unicode_snob=False):
     h = HTML2Text()
@@ -816,7 +819,7 @@ def main():
     h.hide_strikethrough = options.hide_strikethrough
 
     # sys.stdout.write(h.handle(data))
-    wrapwrite(h.handle(data))
+    wrapwrite(clean_invisibles(h.handle(data)))
 
 
 if __name__ == "__main__":

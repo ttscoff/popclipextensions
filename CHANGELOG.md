@@ -1,3 +1,8 @@
+### 1.20
+
+* Update WebMarkdown
+    * Fix invisible characters in output
+
 ### 1.10
 
 * Updated OpenURLS
