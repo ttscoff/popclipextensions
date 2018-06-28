@@ -12,7 +12,7 @@ commentmarkup = comment == "" ? "" : "{>>#{comment} - #{Time.now.strftime('%F %T
 
 date = Time.now.strftime('datetime="%FT%T%z"')
 ctrlcmdprefix = "{~~"
-ctrlcmdsuffix = "-> ~~}"
+ctrlcmdsuffix = "~> ~~}"
 ctrlprefix = "{++"
 ctrlsuffix = "++}"
 cmdprefix = "{--"
