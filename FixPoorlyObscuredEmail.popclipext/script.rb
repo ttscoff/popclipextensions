@@ -8,7 +8,7 @@ debug = ARGV[0] =~ /(debug|-?d)/ ? true : false
 # Hold down Option to open also a mailto link for matched addresses
 
 unless debug
-  input = ENV['POPCLIP_TEXT'].dup
+  input = ENV['POPCLIP_TEXT']
 else
   input =<<ENDINPUT
   "rick AT rolled DOT com"

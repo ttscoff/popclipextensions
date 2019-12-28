@@ -3,14 +3,10 @@ require 'shellwords'
 
 debug = ARGV[0] =~ /(debug|-?d)/ ? true : false
 
-# 1.0
-# 2013-09-30
-#
-# Duplicate of OpenURLs, but copies a plain, newline-separated list to the clipboard
-# Better regex for extracting urls
-# Hold down Option to combine lines and fix broken urls
-# 	This can cause issues with full urls on consecutive lines, but is handy for a single broken link.
-# 	Leaves leading space on lines, so urls broken with an indent are still screwed. Ran into too many problems trying to parse around that.
+# Convert @ttscoff to
+#   [@ttscoff](https://twitter.com/ttscoff)
+# Convert #hashtag to
+#   [#hashtag](https://twitter.com/search?q=%23hashtag&src=hash)
 
 unless debug
   input = ENV['POPCLIP_TEXT'].dup

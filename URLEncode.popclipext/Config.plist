@@ -14,9 +14,9 @@
 	<array>
 		<dict>
 			<key>Shell Script File</key>
-			<string>urlencode.sh</string>
+			<string>urlencode.rb</string>
 			<key>Script Interpreter</key>
-			<string>/bin/bash</string>
+			<string>/usr/bin/env ruby</string>
 			<key>Title</key>
 			<string>%</string>
 			<key>After</key>
