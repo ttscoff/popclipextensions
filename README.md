@@ -102,6 +102,10 @@ This extension searches selected text for urls (http or custom handlers) and ope
 
 Duplicate of OpenURLS, but copies urls to the clipboard, one link per line, instead of opening in browser.
 
+### PreviewURL
+
+Open a popup browser preview of the first URL in the selection.
+
 ### Outdent
 
 Fully outdents the selection, maintaining nested indentation.
