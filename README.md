@@ -204,6 +204,12 @@ The GitHub repository for all of my extensions is [here][github].
 
 ## Changelog ##
 
+### 1.25
+
+* Replace PreviewURL with CheckURLs
+    * Allows results from preview navigation to modify selected text
+    * Better icon
+
 ### 1.24
 
 * Updated PreviewURL
