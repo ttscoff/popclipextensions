@@ -1,10 +1,5 @@
-#!/usr/bin/ruby
+#!/usr/bin/env ruby
 debug = ARGV[0] =~ /(debug|-?d)/ ? true : false
-
-# 2.0 2020-01-06
-# : Handle multiple URLs
-# : Don't recognize urls without protocol
-# : Show popup centered on current display
 
 unless debug
   input = ENV['POPCLIP_TEXT']
@@ -17,18 +12,11 @@ Today's 9:30 Coffee Break: False Beginnings. (More on the Blog - http://minnesot
 ENDINPUT
 end
 
-case ENV['POPCLIP_MODIFIER_FLAGS'].to_i
-when 524288 || debug # Option
-  input = input.split(/[\n\r]/).map {|line|
-    line.chomp!
-    line =~ /^$/ ? "\n" : line
-  }.join("")
-end
-
-o = ""
+output = input.dup
 urls = input.scan(/((?:(?:http|https):\/\/)[\w\-_]+(\.[\w\-_]+)+([\w\-\.,@?^=%&amp;:\/~\+#\(\)_]*[\w\-\@^=%&amp;\/~\+#\(\)])?)/mi)
 
 urls.each {|url|
+
   if url.length == 3
 
     url = url[0]
@@ -37,13 +25,11 @@ urls.each {|url|
       url = url.sub(/\).*?$/,'')
     end
 
-    unless debug
-      %x{automator -i "#{url}" PreviewURL.workflow &}
-    else
-      o += url + "\n"
-      %x{automator -i "#{url}" PreviewURL.workflow &>/dev/null}
+    new_url = %x{automator -i "#{url}" PreviewURL.workflow 2>/dev/null}.strip
+    if new_url && new_url.length > 0
+      output.sub!(/#{url}/,new_url)
     end
   end
 }
-print o if debug
-# %x{automator -i "#{urls[0][0]}" PreviewURL.workflow &}
+print output
+

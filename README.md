@@ -41,6 +41,12 @@ Holding Command (⌘) while clicking will remove all list prefixes.
 
 When you install this extension, you'll get an options page where you can select the type of bullet you prefer for unordered lists. This can be accessed again later by clicking the pencil button at the bottom of the list, then clicking the gear button next to the BulletList extension.
 
+### CheckURLs
+
+Show a popup preview for each URL in selected text. Used for confirming the output of scripts like SearchLink without switching to the browser.
+
+Links are shown sequentially in the order they're found. If a URL is changed by following links in the preview and pressing "OK", the selected text will be updated with the final URL. Because of this, duplicate links in the text are all previewed so they can be modified individually.
+
 ### Comment
 
 Adds comment tags around or before text:
@@ -101,10 +107,6 @@ This extension searches selected text for urls (http or custom handlers) and ope
 ### CopyURLS
 
 Duplicate of OpenURLS, but copies urls to the clipboard, one link per line, instead of opening in browser.
-
-### PreviewURL
-
-Open a (mini) popup browser preview for each URL in the selection.
 
 ### Outdent
 
@@ -202,14 +204,14 @@ The GitHub repository for all of my extensions is [here][github].
 
 ## Changelog ##
 
-### 1.22
+### 1.24
 
 * Updated PreviewURL
     * Ignore URLs without http(s) protocol
     * Handle multiple URLs
     * Center preview pane on display
 
-### 1.19 --- 1.21
+### 1.19 --- 1.23
 
 * stupid commits because I'm having trouble with the build script. Don't mind me.
 
