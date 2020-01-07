@@ -27,7 +27,7 @@
 		<string>http://brettterpstra.com</string>
 	</array>
 	<key>Extension Description</key>
-	<string>Preview first URL in selection.</string>
+	<string>Preview URLs in selection.</string>
 	<key>Extension Identifier</key>
 	<string>com.brettterpstra.popclip.extension.previewurl</string>
 	<key>Extension Name</key>

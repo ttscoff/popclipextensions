@@ -61,9 +61,9 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>outputTypeTag</key>
-					<integer>2</integer>
+					<integer>3</integer>
 					<key>positionTag</key>
-					<integer>1</integer>
+					<integer>0</integer>
 					<key>sizeFormatTag</key>
 					<integer>99</integer>
 					<key>targetSizeX</key>
@@ -183,7 +183,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>502.500000:270.000000</string>
+				<string>502.500000:322.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Website Popup.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>

@@ -3,7 +3,7 @@ Brett's PopClip Extensions
 
 My growing collection of [PopClip][popclip] extensions. 
 
-_Current release version: **1.22** ([source code](https://github.com/ttscoff/popclipextensions/releases/tag/1.22))_
+_Current release version: **1.23** ([source code](https://github.com/ttscoff/popclipextensions/releases/tag/1.23))_
 
 ## Installation
 
@@ -104,7 +104,7 @@ Duplicate of OpenURLS, but copies urls to the clipboard, one link per line, inst
 
 ### PreviewURL
 
-Open a popup browser preview of the first URL in the selection.
+Open a (mini) popup browser preview for each URL in the selection.
 
 ### Outdent
 
@@ -202,7 +202,14 @@ The GitHub repository for all of my extensions is [here][github].
 
 ## Changelog ##
 
-### 1.19 --- 1.20
+### 1.22
+
+* Updated PreviewURL
+    * Ignore URLs without http(s) protocol
+    * Handle multiple URLs
+    * Center preview pane on display
+
+### 1.19 --- 1.21
 
 * stupid commits because I'm having trouble with the build script. Don't mind me.
 

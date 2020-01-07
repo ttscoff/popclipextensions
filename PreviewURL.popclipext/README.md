@@ -1,4 +1,4 @@
 PreviewURL
 ===
 
-PopClip extension to show a popup preview of the first URL in selected text.
+PopClip extension to show a popup preview for each URL in selected text.
