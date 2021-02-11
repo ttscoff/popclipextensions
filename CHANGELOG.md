@@ -1,12 +1,56 @@
-### 1.20
+### 1.26
 
-* Update WebMarkdown
-    * Fix invisible characters in output
+* Add "HardWrap" extension
+
+### 1.25
+
+* Replace PreviewURL with CheckURLs
+    * Allows results from preview navigation to modify selected text
+    * Better icon
+
+### 1.24
+
+* Updated PreviewURL
+    * Ignore URLs without http(s) protocol
+    * Handle multiple URLs
+    * Center preview pane on display
+
+### 1.19 --- 1.23
+
+* stupid commits because I'm having trouble with the build script. Don't mind me.
+
+### 1.18
+
+* Quick little format stripper (PoorText)
+
+### 1.17
+
+* Added "DefineAbbr" extension
+
+### 1.16
+
+* Updated (rewritten) blockquote extension
+
+### 1.15
+
+* Added "Sum" extension
+
+### 1.14
+
+* Added LinkCleaner and CopyCleanLinks extensions
+
+### 1.12
+
+* Added Twitterify extension.
+
+### 1.11
+
+* Added the WebMarkdown extension.
 
 ### 1.10
 
 * Updated OpenURLS
-    * Better regex for extracting urls
+    * Better regex for extracting URLs
     * Hold down Option to combine lines and fix broken urls
         * This can cause issues with full urls on consecutive lines, but is handy for a single broken link.
         * Leaves leading space on lines, so urls broken with an indent are still screwed. Ran into too many problems trying to parse around that.
@@ -36,4 +80,3 @@
 * Outdent: Command-click to outdent all lines fully
 * Too Many Wrappers: Removed Shift-click options as they were breaking stuff.
 * CopyPlus: Command-click to add extra linebreak between entries
-
