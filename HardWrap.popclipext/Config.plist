@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Actions</key>
+	<array>
+		<dict>
+			<key>Image File</key>
+			<string>hardwrap.png</string>
+			<key>Script Interpreter</key>
+			<string>/usr/bin/ruby</string>
+			<key>Shell Script File</key>
+			<string>hardwrap.rb</string>
+			<key>Title</key>
+			<string>Wrap</string>
+			<key>After</key>
+			<string>paste-result</string>
+			<key>Requirements</key>
+			<array>
+				<string>paste</string>
+			</array>
+		</dict>
+	</array>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Option Identifier</key>
+			<string>column</string>
+			<key>Option Type</key>
+			<string>string</string>
+			<key>Option Label</key>
+			<string>Column</string>
+			<key>Option Default Value</key>
+			<string>80</string>
+		</dict>
+		<dict>
+			<key>Option Identifier</key>
+			<string>altcolumn</string>
+			<key>Option Type</key>
+			<string>string</string>
+			<key>Option Label</key>
+			<string>Alternate Column</string>
+			<key>Option Default Value</key>
+			<string>70</string>
+		</dict>
+	</array>
+	<key>Credits</key>
+	<array>
+		<key>Name</key>
+		<string>Brett Terpstra</string>
+		<key>Link</key>
+		<string>http://brettterpstra.com</string>
+	</array>
+	<key>Extension Description</key>
+	<string>Add and remove hard wrapping of paragraphs.</string>
+	<key>Extension Identifier</key>
+	<string>com.brettterpstra.popclip.extension.hardwrap</string>
+	<key>Extension Name</key>
+	<string>HardWrap</string>
+	<key>Version</key>
+	<integer>2</integer>
+</dict>
+</plist>
