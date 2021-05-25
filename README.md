@@ -3,7 +3,7 @@ Brett's PopClip Extensions
 
 My growing collection of [PopClip][popclip] extensions. 
 
-_Current release version: **1.30** ([source code](https://github.com/ttscoff/popclipextensions/releases/tag/1.30))_
+_Current release version: **1.31** ([source code](https://github.com/ttscoff/popclipextensions/releases/tag/1.31))_
 
 ## Installation
 
