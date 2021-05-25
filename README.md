@@ -3,7 +3,7 @@ Brett's PopClip Extensions
 
 My growing collection of [PopClip][popclip] extensions. 
 
-_Current release version: **1.27** ([source code](https://github.com/ttscoff/popclipextensions/releases/tag/1.27))_
+_Current release version: **1.28** ([source code](https://github.com/ttscoff/popclipextensions/releases/tag/1.28))_
 
 ## Installation
 
@@ -80,6 +80,10 @@ Fixes emails obscured in a "support AT mydomain DOT com" fashion.
 
 Hold Option to also open a new email compose window for each matched address. This feature does not require edit capability in the current field.
 
+### Increment Templated
+
+PopClip extension to increment and repeat templated text. See the extension README for details.
+
 ### Markdown to Mindmap
 
 Takes a selection of plain text containing markdown headlines, list items and paragraphs and converts it into a format ready for pasting into a mind mapping application (such as MindNode, MindManager or MindMeister) as separate nodes/topics.
@@ -116,6 +120,14 @@ Fully outdents the selection, maintaining nested indentation.
 ### SkypeCall
 
 Detect phone numbers in the selection and call the first one using Skype.
+
+### HardWrap
+
+Add hard wrapping to paragraphs. Default wrap column is 80, hold down Option to wrap at an alternate column (modify both in the extension options). Hold down command to unwrap text, removing line breaks between lines but preserving multiple lines between paragraphs.
+
+* Clicking wraps at ruler, default 80 characters
+* Option-click to wrap to alternate width
+* Command-click to unwrap text
 
 ### Too Many Wrappers
 

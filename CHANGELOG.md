@@ -1,4 +1,8 @@
-### 1.26
+### 1.28
+
+* Add "Increment Templated" extension
+
+### 1.27
 
 * Add "HardWrap" extension
 
