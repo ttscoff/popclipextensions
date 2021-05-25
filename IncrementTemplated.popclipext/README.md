@@ -8,7 +8,6 @@ Select and run on the following text:
 ```
 This is a numeric increment ##0..2##.
 ```
-
 Which will generate:
 
 ```
