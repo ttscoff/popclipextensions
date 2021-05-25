@@ -14,7 +14,7 @@
 			<key>Title</key>
 			<string>Increment</string>
 			<key>Regular Expression</key>
-			<string>(.*?)##(\d+\.\.\d+|(.+,)+.+)##(.*)</string>
+			<string>(?mis)^(.*?)##(\d+(\.\.\d+)?\.\.\d+|(.+,)+.+)##(.*)$</string>
 			<key>After</key>
 			<string>paste-result</string>
 			<key>Requirements</key>

@@ -26,6 +26,7 @@ Apply math functions to the placeholders using basic operator symbols: `+`, `-`,
 
 You can include leading zeroes on math operations to pad the result. If you want to just pad the number without modifying, you would use `##x*0001##`, which would turn `5` into `0005` and `50` into `0050`.
 
+
 ## String Arrays
 
 You can also use arrays of strings or numbers:
@@ -45,3 +46,22 @@ Hello brother. And repeat with brother.
 
 The `##i##` placeholder (zero-based index) with math operators is also available in string array replacements.
 
+Example:
+
+```
+.element-##one,two,three## {
+    text-indent: ##i*10##px;
+}
+```
+
+```
+.element-one {
+    text-indent: 0px;
+}
+.element-two {
+    text-indent: 10px;
+}
+.element-three {
+    text-indent: 20px;
+}
+```

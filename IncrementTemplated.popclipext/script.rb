@@ -28,7 +28,7 @@ def process_array(input)
     output.push(out)
   end
 
-  output.join
+  output.join("\n")
 end
 
 def get_modifiers(input)
@@ -87,7 +87,7 @@ def process_numeric(input)
     idx += 1
   end
 
-  output.join
+  output.join("\n")
 end
 
 if input =~ NUMERIC_RX
