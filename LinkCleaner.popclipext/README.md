@@ -3,6 +3,8 @@ LinkCleaner
 
 PopClip extension to lengthen and clean URLs.
 
-Option: clean all query strings (default: only clean Google UTM strings)
+Use extension settings to determine whether it strips Google Analytics strings only, or _all_ query strings.
+
+Option: force clean all query strings, ignore settings
 Command: Output just the resulting URL(s)
-Command-Option: Output just URL(s) with query strings stripped
+Command-Option: Output just URL(s) with all query strings stripped

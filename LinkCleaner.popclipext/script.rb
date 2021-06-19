@@ -12,14 +12,15 @@ debug = ARGV[0] =~ /(debug|-?d)/ ? true : false
 
 
 unless debug
+  strip_all_queries = ENV['POPCLIP_OPTION_GAONLY'].to_i == 0
   orig_input = ENV['POPCLIP_TEXT'].dup
 else
-  orig_input = "Brought to you by http://bit.ly/1hQ92Iz and http://brettterpstra.com"
+  strip_all_queries = true
+  orig_input = "Brought to you by http://bit.ly/1hQ92Iz and http://brettterpstra.com, https://clutchpoints.com/clippers-news-rajon-rondo-speaks-out-after-clippers-debut-vs-lakers/?fbclid=IwAR3epED82RKaRTrmL4X_uBCoVjU6mmFxFhZcAXshKwMzm17RuAT_oxxteiE"
 end
 
 input = orig_input.dup
 
-strip_all_queries = false
 only_links = false
 
 case ENV['POPCLIP_MODIFIER_FLAGS'].to_i
@@ -45,30 +46,12 @@ end
 begin
   o = []
   input.gsub!(/((?:(?:http|https):\/\/)?[\w\-_]+(\.[\w\-_]+)+([\w\-\.,@?^=%&amp;:\/~\+#\(\)_]*[\w\-\@^=%&amp;\/~\+#\(\)])?)/mi) {|url|
-    if url =~ /https?:\/\/[\da-z]+\.[a-z]{2}\/[A-Za-z0-9]+/
-      res = Net::HTTP.get(URI.parse("http://api.longurl.org/v2/expand?format=xml&url=#{CGI.escape(url)}"))
-      doc = REXML::Document.new(res.strip)
-      url = doc.elements["response/long-url"].text
-    end
     url = url.clean_google
     url = url.clean_queries if strip_all_queries || debug
     o.push(url)
     url
   }
 
-  # urls.each {|url|
-  #   if url.length == 3 && url.join("") !~ /^[\d\.]+$/
-
-  #   	url = url[0]
-
-  #   	if url =~ /\)/ && url !~ /\(/
-  #   		url = url.sub(/\).*?$/,'')
-  #   	end
-
-  #     target = url =~ /^http/ ? url : "http://#{url}"
-  #     o += target + "\n"
-  #   end
-  # }
   if only_links
     puts o.join("\n")
   else
