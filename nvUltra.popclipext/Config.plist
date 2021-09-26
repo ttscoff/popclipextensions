@@ -49,6 +49,6 @@
 	<key>Extension Name</key>
 	<string>nvUltra</string>
 	<key>Required Software Version</key>
-	<string>701</string>
+	<integer>701</integer>
 </dict>
 </plist>
