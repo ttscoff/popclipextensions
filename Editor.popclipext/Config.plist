@@ -31,7 +31,7 @@
 			<key>Option Label</key>
 			<string>Include Datetime</string>
 			<key>Option Default Value</key>
-			<string>1</string>
+			<string>true</string>
 		</dict>
 	</array>
 	<key>Credits</key>
