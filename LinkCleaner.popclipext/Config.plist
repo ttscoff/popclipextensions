@@ -27,7 +27,7 @@
 			<key>Option Type</key>
 			<string>boolean</string>
 			<key>Option Default Value</key>
-			<string>true</string>
+			<true/>
 			<key>Option Label</key>
 			<string>GA Only</string>
 		</dict>

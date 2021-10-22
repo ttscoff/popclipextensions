@@ -49,7 +49,7 @@
 			<key>Option Label</key>
 			<string>Format Output</string>
 			<key>Option Default Value</key>
-			<string>false</string>
+			<false/>
 		</dict>
 	</array>
 	<key>Credits</key>

@@ -33,7 +33,7 @@
 			<key>Option Label</key>
 			<string>Markdown Links</string>
 			<key>Option Default Value</key>
-			<string>true</string>
+			<true/>
 		</dict>
 	</array>
 	<key>Credits</key>

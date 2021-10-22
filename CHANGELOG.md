@@ -1,3 +1,7 @@
+### 1.33
+
+* Fix for bad option default type in some of the plists.
+
 ### 1.31
 
 * Increment Templated updates/fixes
