@@ -1,3 +1,7 @@
+### 1.34
+
+* Fix for WebMarkdown, change to python3 and update html2text
+
 ### 1.33
 
 * Fix for bad option default type in some of the plists.

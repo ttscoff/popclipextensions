@@ -89,8 +89,8 @@ for k in unifiable.keys():
 def onlywhite(line):
     """Return true if the line does only consist of whitespace characters."""
     for c in line:
-        if c is not ' ' and c is not '  ':
-            return c is ' '
+        if c != ' ' and c != '  ':
+            return c == ' '
     return line
 
 def hn(tag):
@@ -804,6 +804,8 @@ def main():
     else:
         # data = sys.stdin.read()
         data = os.environ['POPCLIP_HTML']
+        encoding = 'utf-8'
+        data = data.encode(encoding)
 
     data = data.decode(encoding)
     h = HTML2Text(baseurl=baseurl)
