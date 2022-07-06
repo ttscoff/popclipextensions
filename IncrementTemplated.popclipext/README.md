@@ -17,6 +17,8 @@ This is a numeric increment 1.
 
 Specify a value to increment by with `##START..INCREMENT..END##`, e.g. `##0..2..10##` would insert 0, 2, 4, 6, 8, and 10.
 
+![Increment Templated](../increment.gif)
+
 ### Placeholders
 
 You can use placeholders with basic math modification. `##x##` inserts the current element again. `##i##` inserts the 0-based index in the iteration. So if the template is `##5..7##`, on the second iteration `x` would hold `6` and `i` would hold `1`.
