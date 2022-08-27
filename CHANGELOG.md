@@ -1,3 +1,7 @@
+### 1.35
+
+* Convert WebMarkdown to use Swift-based HTML2Text, avoiding need for Python executable
+
 ### 1.34
 
 * Fix for WebMarkdown, change to python3 and update html2text

@@ -17,7 +17,7 @@ This is a numeric increment 1.
 
 Specify a value to increment by with `##START..INCREMENT..END##`, e.g. `##0..2..10##` would insert 0, 2, 4, 6, 8, and 10.
 
-![Increment Templated](../increment.gif)
+![Increment Templated](https://raw.githubusercontent.com/ttscoff/popclipextensions/master/increment.gif)
 
 ### Placeholders
 

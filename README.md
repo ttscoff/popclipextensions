@@ -3,7 +3,7 @@ Brett's PopClip Extensions
 
 My growing collection of [PopClip][popclip] extensions. 
 
-_Current release version: **1.35** ([source code](https://github.com/ttscoff/popclipextensions/releases/tag/1.35))_
+_Current release version: **1.36** ([source code](https://github.com/ttscoff/popclipextensions/releases/tag/1.36))_
 
 ## Installation
 
@@ -84,7 +84,7 @@ Hold Option to also open a new email compose window for each matched address. Th
 
 PopClip extension to increment and repeat templated text. See the extension README for details.
 
-![Increment Templated](increment.gif)
+![Increment Templated](https://raw.githubusercontent.com/ttscoff/popclipextensions/master/increment.gif)
 
 ### Markdown to Mindmap
 
