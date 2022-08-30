@@ -1,3 +1,7 @@
+### 1.40
+
+* Remove the popcliphtml2text CLI from WebMarkdown that was causing "malicious software" warnings. Now offers to download and install using the signed and notarized package.
+
 ### 1.38
 
 * Fix a couple of bugs and improve output of html2text for WebMarkdown
