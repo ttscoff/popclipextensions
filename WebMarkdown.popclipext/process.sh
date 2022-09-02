@@ -1,8 +1,12 @@
 #!/bin/bash
 
-if [[ ! -e /usr/local/bin/gather ]]; then
-	osascript download.applescript
-	exit 1
+GATHER=/usr/local/bin/gather
+if [[ ! -e $GATHER ]]; then
+	GATHER=/opt/homebrew/bin/gather
+	if [[ ! -e $GATHER ]]; then
+		osascript download.applescript
+		exit 1
+	fi
 fi
 
-/usr/local/bin/gather --env POPCLIP_HTML --no-readability --html
+$GATHER --env POPCLIP_HTML --no-readability --html

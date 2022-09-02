@@ -1,3 +1,7 @@
+### 1.41
+
+* Update WebMarkdown to allow for gather installs in /opt/homebrew/bin.
+
 ### 1.40
 
 * Remove the popcliphtml2text CLI from WebMarkdown that was causing "malicious software" warnings. Now offers to download and install using the signed and notarized package.
