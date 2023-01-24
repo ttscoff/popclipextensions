@@ -1,3 +1,7 @@
+### 1.44
+
+* Fix SearchLink extension
+
 ### 1.43
 
 * If SearchLink isn't installed, install it when running the SearchLink extension
