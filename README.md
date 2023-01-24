@@ -170,6 +170,8 @@ Allows the quick insertion of [CriticMarkup][] syntax. Optionally fill in a sign
 
 Also known as WebMD, this extension shows up when you select text on a web page. Clicking it will convert the selected headlines, text and links (including image links) to Markdown in your clipboard.
 
+This extension now uses [Gather](https://brettterpstra.com/projects/gather-cli/ "Gather CLI"). If you don't have it installed it will offer to do so for you.
+
 ### Twitterify
 
 Convert all @names and #tags to Markdown or HTML links. You can set the default link type in the extension's options, and manually switch to the other type by holding down Option when running it.
@@ -208,6 +210,10 @@ Strips rich text formatting from selection. There are probably multiple others t
 
 Runs the SearchLink service on selected text. Requires that [searchlink](https://brettterpstra.com/projects/searchlink/ "SearchLink") be installed in ~/Library/Services.
 
+### nvUltra
+
+Adds the selected text to a new note in [nvUltra](https://nvultra.com/ "nvUltra-Searchable, portable, MultiMarkdown notes"). You can configure which notebook to use when installing the extension.
+
 <!-- END EXTENSIONS -->
 
 ## Download
@@ -222,6 +228,6 @@ The GitHub repository for all of my extensions is [here][github].
 
 ## Changelog
 
-See CHANGELOG.md
+{% changelog bretts-popclip-extensions.md %}
 
 <!-- END CHANGELOG -->

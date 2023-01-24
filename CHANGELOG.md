@@ -1,3 +1,8 @@
+### 1.42
+
+* Fix nvUltra extension
+* Add SearchLink extension
+
 ### 1.41
 
 * Update WebMarkdown to allow for gather installs in /opt/homebrew/bin.
