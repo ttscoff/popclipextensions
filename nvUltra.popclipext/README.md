@@ -3,7 +3,7 @@ nvALT
 
 [nvALT](http://brettterpstra.com/project/nvalt/) extension for PopClip
 
-* [nv: URL Specification](https://github.com/scrod/nv/wiki/nv%3A---URL-Specification)
+* [nv: URL Specification](https://github.com/scrod/nv/wiki/nv)
 
 Credits
 -------

@@ -5,10 +5,12 @@
 	<key>Actions</key>
 	<array>
 		<dict>
+			<key>Image File</key>
+			<string>rocket.png</string>
+			<key>Script Interpreter</key>
+			<string>/usr/bin/ruby</string>
 			<key>Shell Script File</key>
-			<string>nvUltra.sh</string>
-			<key>Title</key>
-			<string>U</string>
+			<string>nvUltra.rb</string>
 		</dict>
 	</array>
 	<key>Apps</key>

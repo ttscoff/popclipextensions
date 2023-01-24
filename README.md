@@ -204,6 +204,10 @@ PopClip extension to search textingabbreviations.ca for the selected string.
 
 Strips rich text formatting from selection. There are probably multiple others that do this, but it's so easy I just made it myself.
 
+### SearchLink
+
+Runs the SearchLink service on selected text. Requires that [searchlink](https://brettterpstra.com/projects/searchlink/ "SearchLink") be installed in ~/Library/Services.
+
 <!-- END EXTENSIONS -->
 
 ## Download
