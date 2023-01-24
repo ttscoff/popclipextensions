@@ -1,3 +1,7 @@
+### 1.43
+
+* If SearchLink isn't installed, install it when running the SearchLink extension
+
 ### 1.42
 
 * Fix nvUltra extension
