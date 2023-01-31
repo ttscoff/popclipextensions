@@ -1,5 +1,4 @@
-NumberedList
-===
+### NumberedList
 
 PopClip extension to turn lines of text into Markdown numbered items. Will sort and update an existing numbered list as well, and convert bullets on list items to numbers.
 

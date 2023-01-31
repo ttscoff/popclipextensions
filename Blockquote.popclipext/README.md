@@ -1,5 +1,4 @@
-Blockquote
-===
+### Blockquote
 
 Turn indented text (or any text) into nested Markdown blockquotes.
 

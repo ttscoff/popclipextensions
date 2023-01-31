@@ -1,5 +1,4 @@
-Increment Templated
-===
+### Increment Templated
 
 PopClip extension to increment and repeat templated text.
 
@@ -19,7 +18,7 @@ Specify a value to increment by with `##START..INCREMENT..END##`, e.g. `##0..2..
 
 ![Increment Templated](https://raw.githubusercontent.com/ttscoff/popclipextensions/master/increment.gif)
 
-### Placeholders
+#### Placeholders
 
 You can use placeholders with basic math modification. `##x##` inserts the current element again. `##i##` inserts the 0-based index in the iteration. So if the template is `##5..7##`, on the second iteration `x` would hold `6` and `i` would hold `1`.
 
@@ -28,7 +27,7 @@ Apply math functions to the placeholders using basic operator symbols: `+`, `-`,
 You can include leading zeroes on math operations to pad the result. If you want to just pad the number without modifying, you would use `##x*0001##`, which would turn `5` into `0005` and `50` into `0050`.
 
 
-## String Arrays
+#### String Arrays
 
 You can also use arrays of strings or numbers:
 

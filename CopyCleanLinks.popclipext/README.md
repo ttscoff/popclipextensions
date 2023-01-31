@@ -1,5 +1,4 @@
-CopyCleanLinks
-===
+### CopyCleanLinks
 
 PopClip extension to lengthen and clean URLs. Duplicate of LinkCleaner, but only copies results to the clipboard.
 

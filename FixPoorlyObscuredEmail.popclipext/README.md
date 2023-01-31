@@ -1,5 +1,4 @@
-FixPoorlyObscuredEmails
-===
+### FixPoorlyObscuredEmails
 
 Fixes emails obscured in a "support AT mydomain DOT com" fashion.
 

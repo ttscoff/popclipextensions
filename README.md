@@ -3,18 +3,19 @@ Brett's PopClip Extensions
 
 My growing collection of [PopClip][popclip] extensions. 
 
-_Current release version: **1.44** ([source code](https://github.com/ttscoff/popclipextensions/releases/tag/1.44))_
-
 ## Installation
 
 This repository only includes these as source bundles (`.popclipext`), not packaged `.popclipextz` versions. To install, just make sure the extension of a folder is `.popclipext` and double click it in Finder. An up-to-date package of the bundled versions is [available on my site](http://brettterpstra.com/projects/bretts-popclip-extensions).
 
-<!-- EXTENSIONS -->
+<!--README-->
+
+Current release version: **<!--VER-->1.44.3<!--END VER-->** ([source code](https://github.com/ttscoff/popclipextensions/releases/tag/<!--VER-->1.44.3<!--END VER-->))_
 
 ## Extensions
 
 The extensions currently included in the bundle. Some are available elsewhere as well, but this collection will always be the most up-to-date versions.
 
+<!--EXTENSIONS-->
 ### Blockquote
 
 Turn indented text (or any text) into nested Markdown blockquotes.
@@ -213,21 +214,23 @@ Runs the SearchLink service on selected text. Requires that [searchlink](https:/
 ### nvUltra
 
 Adds the selected text to a new note in [nvUltra](https://nvultra.com/ "nvUltra-Searchable, portable, MultiMarkdown notes"). You can configure which notebook to use when installing the extension.
-
-<!-- END EXTENSIONS -->
+<!--END EXTENSIONS-->
 
 ## Download
 
+<!--JEKYLL{% download 78 %}-->
+
 The GitHub repository for all of my extensions is [here][github].
+
+## Changelog
+
+<!--JEKYLL{% changelog https://raw.githubusercontent.com/ttscoff/popclipextensions/master/CHANGELOG.md %}-->
+
+<!--GITHUB-->
+See [the changelog on GitHub](https://github.com/ttscoff/popclipextensions/blob/master/CHANGELOG.md)
+<!--END GITHUB-->
 
 [popclip]: http://pilotmoon.com/popclip/
 [choosy]: http://www.choosyosx.com/
 [github]: https://github.com/ttscoff/popclipextensions
-
-<!-- CHANGELOG -->
-
-## Changelog
-
-{% changelog bretts-popclip-extensions.md %}
-
-<!-- END CHANGELOG -->
+<!--END README-->

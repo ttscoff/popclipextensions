@@ -1,5 +1,4 @@
-CriticMarkup
-===
+### CriticMarkup
 
 Allows the quick insertion of [CriticMarkup][] syntax. Optionally fill in a signature to have a comment included after every insert, deletion or change with your initials or name.
 

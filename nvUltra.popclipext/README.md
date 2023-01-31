@@ -1,11 +1,9 @@
-nvALT
-=====
+### nvALT
 
 [nvALT](http://brettterpstra.com/project/nvalt/) extension for PopClip
 
 * [nv: URL Specification](https://github.com/scrod/nv/wiki/nv)
 
-Credits
--------
+#### Credits
 
 Originally created by Marc Abramowitz - see [https://github.com/msabramo/nvALT.popclipext](https://github.com/msabramo/nvALT.popclipext).  Icon and minor modifications by Nick Moore.

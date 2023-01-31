@@ -1,5 +1,4 @@
-Code
-===
+### Comment
 
 Turn selected text into an HTML or code comment. 
 

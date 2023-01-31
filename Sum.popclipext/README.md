@@ -1,5 +1,4 @@
-Sum
-===
+### Sum
 
 Detect all numbers in selection and total them. Allows decimal places (using `.` or `,` as separator) and negative numbers. Result is copied to clipboard.
 

@@ -1,5 +1,4 @@
-Code
-===
+### Code
 
 Turn selected text into Markdown inline code or a code block. This extension "toggles," so if the selection already contains code syntax (inline code or fenced code block) the syntax is removed.
 
