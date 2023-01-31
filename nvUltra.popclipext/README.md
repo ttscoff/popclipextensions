@@ -1,8 +1,6 @@
-### nvALT
+### nvUltra
 
-[nvALT](http://brettterpstra.com/project/nvalt/) extension for PopClip
-
-* [nv: URL Specification](https://github.com/scrod/nv/wiki/nv)
+[nvUltra](https://nvultra.com) extension for PopClip. Add text as new note to frontmost notebook, or define a notebook in settings.
 
 #### Credits
 
