@@ -1,3 +1,11 @@
+### 1.44.7
+
+2023-02-06 11:14
+
+#### IMPROVED
+
+- Allow string arrays in template modifiers for Increment Templated
+
 ### 1.44.6
 
 2023-02-06 11:01
