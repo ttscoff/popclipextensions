@@ -6,6 +6,25 @@ input = ENV['POPCLIP_TEXT']
 NUMERIC_RX = /(\?\:)?##(\d+)(?:\.\.(\d+))?\.\.(\d+)##/.freeze
 ARRAY_RX = /##(.*?)##/.freeze
 
+def get_modifiers(input)
+  input.scan(%r{##(([ix0-9()+\-/*%]+)*)(#([^#]+))?##}).map do
+    m = Regexp.last_match
+    padding = if m[2].nil?
+                '%d'
+              else
+                t = m[2].match(/\b(0+)([1-9]\d*)?/)
+                t.nil? || m[2] =~ /^0$/ ? '%d' : "%0#{t[0].length}d"
+              end
+
+    options_array = m[3].nil? ? nil : m[4].split(/,/).map(&:strip)
+
+    base = m[1].nil? ? 'x' : m[1]
+    inc = m[2].nil? ? '' : m[2].gsub(/\b(0+\d+)/, &:to_i)
+
+    [Regexp.escape(m[0]), inc, padding, base, options_array]
+  end
+end
+
 def process_array(input)
   template = input.match(ARRAY_RX)
   replacements = template[1].split(/,/).map(&:strip)
@@ -30,25 +49,6 @@ def process_array(input)
   end
 
   output.join("\n")
-end
-
-def get_modifiers(input)
-  input.scan(%r{##(([ix0-9()+\-/*%]+)*)(#([^#]+))?##}).map do
-    m = Regexp.last_match
-    padding = if m[2].nil?
-                '%d'
-              else
-                t = m[2].match(/\b(0+)([1-9]\d*)?/)
-                t.nil? || m[2] =~ /^0$/ ? '%d' : "%0#{t[0].length}d"
-              end
-
-    options_array = m[3].nil? ? nil : m[4].split(/,/).map(&:strip)
-
-    base = m[1].nil? ? 'x' : m[1]
-    inc = m[2].nil? ? '' : m[2].gsub(/\b(0+\d+)/, &:to_i)
-
-    [Regexp.escape(m[0]), inc, padding, base, options_array]
-  end
 end
 
 def process_numeric(input)
@@ -76,6 +76,7 @@ def process_numeric(input)
     out = input.sub(/#{Regexp.escape(template[0])}/, replacement)
     modified.each do |mod|
       next if mod.nil?
+
       equat = mod[3].gsub(/\b0+/, '').gsub(/x/, (idx + 1).to_s).gsub(/i/, idx.to_s)
 
       if mod[4]
