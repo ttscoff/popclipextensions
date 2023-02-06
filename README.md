@@ -9,7 +9,7 @@ This repository only includes these as source bundles (`.popclipext`), not packa
 
 <!--README-->
 
-_Current release version: **<!--VER-->1.44.4<!--END VER-->** ([source code](https://github.com/ttscoff/popclipextensions/releases/tag/<!--VER-->1.44.4<!--END VER-->))_
+_Current release version: **<!--VER-->1.44.5<!--END VER-->** ([source code](https://github.com/ttscoff/popclipextensions/releases/tag/<!--VER-->1.44.5<!--END VER-->))_
 
 > Many of these extensions have alternate behaviors when holding modifier keys. Recent versions of PopClip override these variations and provide specific actions when holding modifiers, such as Shift to copy result and Option to display the result in the bar. This means that the variations in the plugins no longer function. A better system may be available in the future, but for now, to restore the modifier key functionality, you need to disable the global interpretation of them. Open Terminal and run this command:
 >

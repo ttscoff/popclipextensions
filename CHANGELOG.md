@@ -1,3 +1,14 @@
+### 1.44.6
+
+2023-02-06 11:01
+
+#### IMPROVED
+
+- Using extension READMEs to generate main README
+- Updated READMEs
+- Allow more complex mathematical equations with i and x in Increment Templated
+- Allow string arrays in template modifiers for Increment Templated
+
 ### 1.44.5
 
 2023-02-06 10:21
