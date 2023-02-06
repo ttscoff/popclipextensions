@@ -16,8 +16,9 @@ def process_array(input)
     out = input.sub(/#{Regexp.escape(template[0])}/, replacement)
     out.gsub!(/##[0x]##/, replacement)
     modified.each do |mod|
+      next if mod.nil?
+
       equat = mod[3].gsub(/\b0+/, '').gsub(/x/, (idx + 1).to_s).gsub(/i/, idx.to_s)
-      puts equat
       out.sub!(/#{mod[0]}/, (mod[2] % (eval equat).to_s))
     end
 
@@ -69,13 +70,9 @@ def process_numeric(input)
     out = input.sub(/#{Regexp.escape(template[0])}/, replacement)
     modified.each do |mod|
       next if mod.nil?
-      base = if mod && mod[3] =~ /i/i
-               idx
-             else
-               count_start
-             end
+      equat = mod[3].gsub(/\b0+/, '').gsub(/x/, (idx + 1).to_s).gsub(/i/, idx.to_s)
 
-      out.sub!(/#{mod[0]}/, (mod[2] % (eval "#{base}#{mod[1]}")).to_s)
+      out.sub!(/#{mod[0]}/, (mod[2] % (eval equat).to_s))
     end
     output << out
     count_start += inc
