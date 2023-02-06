@@ -9,7 +9,7 @@ This repository only includes these as source bundles (`.popclipext`), not packa
 
 <!--README-->
 
-_Current release version: **<!--VER-->1.44.6<!--END VER-->** ([source code](https://github.com/ttscoff/popclipextensions/releases/tag/<!--VER-->1.44.6<!--END VER-->))_
+_Current release version: **<!--VER-->1.44.8<!--END VER-->** ([source code](https://github.com/ttscoff/popclipextensions/releases/tag/<!--VER-->1.44.8<!--END VER-->))_
 
 > Many of these extensions have alternate behaviors when holding modifier keys. Recent versions of PopClip override these variations and provide specific actions when holding modifiers, such as Shift to copy result and Option to display the result in the bar. This means that the variations in the plugins no longer function. A better system may be available in the future, but for now, to restore the modifier key functionality, you need to disable the global interpretation of them. Open Terminal and run this command:
 >
@@ -159,6 +159,7 @@ Select and run on the following text:
 ```
 This is a numeric increment ##0..2##.
 ```
+
 Which will generate:
 
 ```
@@ -174,9 +175,9 @@ Specify a value to increment by with `##START..INCREMENT..END##`, e.g. `##0..2..
 
 You can use placeholders with basic math modification. `##x##` inserts the current element again. `##i##` inserts the 0-based index in the iteration. So if the template is `##5..7##`, on the second iteration `x` would hold `6` and `i` would hold `1`.
 
-Apply math functions to the placeholders using basic operator symbols (including `%` for mod). To insert the current value times 10, use `##x*10##`.
+Apply math functions to the placeholders using basic operator symbols (including `%` for mod). To insert the current value times 10, use `##x*10##`. More complex equations are allowed, e.g. `##(i+2)*10##`. Use `%` for modulus.
 
-You can include leading zeroes on math operations to pad the result. If you want to just pad the number without modifying, you would use `##x*0001##`, which would turn `5` into `0005` and `50` into `0050`.
+You can include leading zeroes on math operations to pad the result. If you want to just pad the number without modifying, you would use `##x*0001##`, which would turn `5` into `0005` and `50` into `0050`. Including a 0 padding on any element of the equation will result in padded output.
 
 
 #### String Arrays
@@ -196,7 +197,7 @@ Hello sister. And repeat with sister.
 Hello brother. And repeat with brother.
 ```
 
-The `##i##` placeholder (zero-based index) with math operators is also available in string array replacements.
+The `##i##` placeholder (zero-based index) with math operators is also available in string array replacements. If you want the index to also refer to strings, add `#list,of,strings` after the index or equation, e.g. `##i%2#odd,even##` to insert `odd` and `even` alternately with each iteration.
 
 Example:
 
