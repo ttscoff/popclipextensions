@@ -16,13 +16,9 @@ def process_array(input)
     out = input.sub(/#{Regexp.escape(template[0])}/, replacement)
     out.gsub!(/##[0x]##/, replacement)
     modified.each do |mod|
-      base = case mod[3]
-      when /x/i
-        idx + 1
-      else
-        idx
-      end
-      out.sub!(/#{mod[0]}/, (mod[2] % (eval "#{base}#{mod[1]}")).to_s)
+      equat = mod[3].gsub(/\b0+/, '').gsub(/x/, (idx + 1).to_s).gsub(/i/, idx.to_s)
+      puts equat
+      out.sub!(/#{mod[0]}/, (mod[2] % (eval equat).to_s))
     end
 
     output.push(out)
@@ -32,9 +28,8 @@ def process_array(input)
 end
 
 def get_modifiers(input)
-  input.scan(/##[ix](?:[+\-\\*%]\d+)?##/).map do |x|
-    m = x.match(/##([ix])([0-9()+\-\\*%]+)?##/)
-
+  input.scan(%r{##(([ix0-9()+\-/*%]+)*)##}).map do
+    m = Regexp.last_match
     padding = if m[2].nil?
                 '%d'
               else
@@ -43,7 +38,7 @@ def get_modifiers(input)
               end
 
     base = m[1].nil? ? 'x' : m[1]
-    inc = m[2].nil? ? '' : m[2].gsub(/\b(0+\d+)/) {|m| m.to_i }
+    inc = m[2].nil? ? '' : m[2].gsub(/\b(0+\d+)/, &:to_i)
 
     [Regexp.escape(m[0]), inc, padding, base]
   end

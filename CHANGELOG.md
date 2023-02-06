@@ -1,3 +1,12 @@
+### 1.44.4
+
+2023-01-31 08:07
+
+#### IMPROVED
+
+- Using extension READMEs to generate main README
+- Updated READMEs
+
 ### 1.44
 
 * Fix SearchLink extension
